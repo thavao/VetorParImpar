@@ -12,7 +12,7 @@ int[] numeros = new int[QtdMaxiaNumeros];
 
 for (i = 0; i < QtdMaxiaNumeros; i++)
 {
-    Console.Write($"Digite o {i + i}º número: ");
+    Console.Write($"Digite o {i + 1}º número: ");
     numeros[i] = int.Parse(Console.ReadLine());
 }
 
@@ -39,6 +39,12 @@ do
 
     i++;
 } while (i < QtdMaxiaNumeros);
+
+Console.WriteLine();
+
+Console.WriteLine($"O primeiro valor digitado foi: {numeros[QtdMaxiaNumeros - QtdMaxiaNumeros]}");
+
+Console.WriteLine($"O ultimo valor digitado foi: {numeros[QtdMaxiaNumeros - 1]}");
 
 Console.WriteLine();
 Console.WriteLine("Pressione Enter para encerrar...");
