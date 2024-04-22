@@ -12,7 +12,7 @@ int[] numeros = new int[QtdMaxiaNumeros];
 
 for (i = 0; i < QtdMaxiaNumeros; i++)
 {
-    Console.Write($"Digite o {i}º número: ");
+    Console.Write($"Digite o {i + i}º número: ");
     numeros[i] = int.Parse(Console.ReadLine());
 }
 
